@@ -1,0 +1,86 @@
+
+li.notepadInfos div {
+  display: flex;
+  justify-content: space-between;
+}
+
+li.notepadInfos {
+  background-color: #fff;
+  box-shadow: 0 0 14px 0 rgba(0, 0, 0, .2);
+  border-radius: .625rem;
+  padding: 1.125rem 1.125rem .625rem 1.125rem;
+}
+
+li.notepadInfos strong {
+  display: block;
+  font-size: 1.125rem;
+  color: #333;
+  margin-bottom: .5rem;
+}
+
+li.notepadInfos div div {
+  color: #333;
+  cursor: pointer;
+}
+
+li.notepadInfos div div:hover {
+  color: #eb8f7a;
+  transition: .2s;
+}
+
+li.notepadInfos textarea {
+  margin-top: .5rem;
+  margin-bottom: .3rem;
+  width: 100%;
+  height: 130px;
+  font-size: 1.125rem;
+  color: #999;
+  border: none;
+  background-color: #fff;
+  resize: none;
+}
+
+li.notepadInfos span {
+  color: #333;
+  cursor: pointer;
+}
+
+li.notepadInfos span:hover {
+  color: #eb8f7a;
+  transition: .2s;
+}
+
+li.priority {
+  background-color: #333;
+}
+
+li.priority textarea {
+  background-color: #333;
+  color: #fff;
+}
+
+li.priority strong {
+  color: #fff;
+}
+
+li.priority div div {
+  color: #fff;
+  transition: .2s;
+}
+
+li.priority div div:hover {
+  color: #fff;
+}
+
+li.priority p {
+  color: #fff;
+}
+
+li.priority span {
+  color: #fff;
+  transition: .2s;
+}
+
+li.priority span:hover {
+  color: #fff;
+}

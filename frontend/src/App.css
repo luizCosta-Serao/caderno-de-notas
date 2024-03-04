@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100vh;
+}
+
+body {
+  background-color: #e4e7ef;
+  -webkit-font-smoothing: antialiased
+}
+
+body, input, button, textarea {
+  font-family: "Roboto", sans-serif;
+}
+
+/* sidebar */
+
+aside {
+  max-width: 320px;
+  width: 100%;
+  margin-bottom: 2rem;
+  background-color: #fff;
+  box-shadow: 0 0 14px 0 rgba(0, 0, 0, .2);
+  border-radius: 10px;
+  padding: 2rem 1.125rem;
+  position: fixed;
+}
+
+aside strong {
+  font-size: 1.125rem;
+  text-align: center;
+  display: block;
+  color: #333;
+}
+
+aside form {
+  margin-top: 2rem;
+}
+
+aside form .input_block {
+  margin-top: 1.125rem;
+}
+
+aside form .input_block label {
+  color: #acacac;
+  font-size: .875rem;
+  font-weight: bold;
+  display: block;
+}
+
+aside form .input_block input {
+  width: 100%;
+  height: 2rem;
+  font-size: .875rem;
+  color: #666;
+  border: none;
+  border-bottom: 1px solid #eee;
+  border: 1px solid #ddd;
+  padding: .5rem;
+  margin-top: .5rem;
+  border-radius: .5rem;
+}
+
+aside form .input_block textarea {
+  margin-top: .5rem;
+  width: 100%;
+  height: 200px;
+  font-size: .875rem;
+  color: #666;
+  border: none;
+  border-bottom: 1px solid #eee;
+  background-color: #fff;
+  resize: none;
+  border: 1px solid #ddd;
+  padding: .5rem;
+  border-radius: .5rem;
+}
+
+aside form button[type='submit'] {
+  width: 100%;
+  border: none;
+  margin-top: 2rem;
+  background-color: #ffd3ca;
+  border-radius: .875rem;
+  padding: 1rem 1.125rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* App */
+
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+/* main */
+
+main {
+  flex: 1;
+  margin-left: 350px;
+}
+
+main ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.125rem;
+  list-style: none;
+}
+
+@media (max-width: 1000px) {
+  aside {
+    position: initial;
+    max-width: 100%;
+  }
+
+  .app {
+    flex-direction: column;
+    align-items: unset;
+  }
+
+  .app main {
+    margin-left: 0;
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 678px) {
+  main ul {
+    grid-template-columns: 1fr;
+  }
+}
